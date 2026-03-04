@@ -1,18 +1,116 @@
-# React + Vite
+EngageSphere – User Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+EngageSphere is a full-stack user management platform built using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+It allows administrators to manage users, update their information, and control access through a secure dashboard.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔐 Authentication System
+Secure login and registration using JWT authentication.
 
-## React Compiler
+👤 User Management
+Admins can add, update, delete, and view users in the system.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+📋 User Dashboard
+Users can view their profile and manage personal details.
 
-Note: This will impact Vite dev & build performances.
+🛡 Role-Based Access Control
+Admin and normal users have different permissions.
 
-## Expanding the ESLint configuration
+🔎 Search and Update Users
+Admins can easily find users and modify their information.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⚡ REST API Backend
+Backend built with Express.js providing secure APIs.
+
+🛠 Tech Stack
+
+Frontend
+
+React.js
+
+HTML5
+
+CSS3
+
+JavaScript
+
+Axios
+
+Backend
+
+Node.js
+
+Express.js
+
+JWT Authentication
+
+Database
+
+MongoDB
+
+Mongoose
+
+🎯 How It Works
+1️⃣ User Authentication
+
+Users can register and login securely.
+
+After login, a JWT token is generated for secure API access.
+
+2️⃣ Admin Dashboard
+
+Admins can:
+
+View all users
+
+Add new users
+
+Update user information
+
+Delete users
+
+3️⃣ User Dashboard
+
+Users can:
+
+View profile information
+
+Update their personal details
+
+4️⃣ Database Management
+
+MongoDB stores all:
+
+User information
+
+Login credentials
+
+Role-based access data
+⚙️ Installation / Setup
+1️⃣ Clone the repository
+git clone https://github.com/shyamala-bodati/usermanagement-project.git
+2️⃣ Install dependencies
+
+Backend
+
+cd backend
+npm install
+
+Frontend
+
+cd frontend
+npm install
+3️⃣ Setup environment variables
+
+Create a .env file inside backend:
+
+PORT=5000
+MONGO_URI=your_mongodb_connection
+JWT_SECRET=your_secret_key
+4️⃣ Run the backend
+cd backend
+npm start
+5️⃣ Run the frontend
+cd frontend
+npm run dev
